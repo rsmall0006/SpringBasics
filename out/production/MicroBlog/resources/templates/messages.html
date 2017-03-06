@@ -1,0 +1,34 @@
+<!--<html>-->
+<!--<body>-->
+
+
+
+<!--<form action="/message" method="post">-->
+    <!--<input type="text" placeholder="Enter your message" name="yourMessage"/>-->
+    <!--<button type="submit"> Submit</button>-->
+
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;<form action="/" method="post">&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" placeholder="Enter your new message" name="yourMessage2"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<button type="submit">Submit</button>&ndash;&gt;-->
+
+
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<html>
+<body>
+Hello, {{name}}. Submit your messages in the box below and press Submit to save them.<br>
+<form action="/message" method="post">
+    <input type="text" placeholder="Enter your messages here" name="message"/>
+    <button type="submit">Submit</button>
+    <br>
+</form>
+<ol>
+    {{#message}}
+    <li>{{text}}</li>
+    {{/message}}
+</ol>
+</body>
+</html>
